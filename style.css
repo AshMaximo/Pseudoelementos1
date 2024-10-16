@@ -1,0 +1,48 @@
+header {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+a:hover {
+  color: red;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  margin: 10;
+  padding: 0;
+}
+li {
+  margin-right: 15px;
+}
+article::before {
+  content: "Título del artículo:";
+  font-size: 20px;
+  font-weight: bold;
+}
+h2::first-letter {
+  color: blue;
+}
+p::before {
+  content: "*. ✌️";
+}
+p::first-line {
+  color: green;
+}
+p::after {
+  content: " -Aloja more don-✌️";
+  color: red;
+}
+article::after {
+  content: " -Fin del artículo";
+}
+
